@@ -1,0 +1,59 @@
+<!--sources:
+https://www.w3schools.com/howto/howto_js_progressbar.asp
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_progressbar_3
+https://stackoverflow.com/questions/63755989/how-to-link-html-css-and-js-together
+https://www.geeksforgeeks.org/javascript/task-scheduler-using-html-css-and-js/
+-->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Assignment 03</title> 
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  
+  <body>
+    <header>
+      <h1>Track Your Progress</h1> 
+      <a href="/index.html">COURSE PAGE</a>
+    </header>
+    
+    <main>
+      <div class="row">
+        <input id="taskInput" type="text" placeholder="Add a task..." />
+        <select id="taskTag">
+          <option value="HW">Code review</option>
+          <option value="Grocery">To-do</option>
+          <option value="Other">Other</option>
+        </select>
+        <select id="priority">
+          <option value="Top"> Top priority</option>
+          <option value="Medium"> Medium priority</option>
+          <option value="Low"> Low priority</option>
+        </select>
+        <select id="AssignPerson">
+          <option value="Kimberly">Kimberly</option>
+          <option value="Malvin">Malvin</option>
+          <option value="Yuri">Yuri</option>
+        </select>
+        <label for="event-date">Select an Event date:</label>
+        <input type="date" id="event-date" name="event-date">
+        <button id="addBtn">Add</button>
+      </div>
+
+      <ul id="taskList"></ul>
+
+      <!-- Only ONE progress bar -->
+      <h2>Task Progress</h2>
+      <div class="progress-bar">
+        <div id="progressFill" class="progress-bar-fill">50%</div>
+      </div>
+      
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
