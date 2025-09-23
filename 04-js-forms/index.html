@@ -1,0 +1,114 @@
+<!--
+Need:
+- interactive
+- allows user to input more into into predefined info
+    - User input needs:
+        -validation
+        -update page
+        <form> w/ three diff tupes of input elements
+        -submit button
+        -empty <div> or <ul> to sere as area to dinamically add content
+
+- >3 CSS rules
+
+IDEA:
+https://lacabra.com/pages/east-village?showBanner=false&lastClicked=1758581161543
+- reservation for a coffee shop to book <2 hr windows to do work
+
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Assignment 04</title> 
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <img src="./coffee-cat-logo-design-template-600nw-2137455549.jpg.webp" alt="logo for coffee shop">
+            <nav class="topnav">
+                <a href="#">MENU</a>
+                <a href="#">HOURS</a>
+                <a href="#">CONTACT</a>
+                <a href="#">RESERVATION</a>
+                <a href="index.html">COURSE PAGE</a>
+            </nav>
+        </header>
+        
+        <main>
+            <marquee class="announcement">
+                You can make a reservation for up to a week in advance!
+            </marquee>
+            <img src="./cozy-coffee-shop-stockcake.jpg" alt="inside of coffee shop">
+
+            <div class="aboutUs">
+                <div class="about-text">
+                    <h1>Washington, D.C.</h1>
+                    <p>We welcome you to our D.C. location where you can enjoy a cup of coffee!</p>
+                
+                    <br>
+                    <p>Select a weekday to view our opening hours:</p>
+
+                    <!--make it select a day of the week to see opening hours-->
+                    <div class="hours-container">
+                    <!-- List of weekdays -->
+                        <ul class="weekday-list">
+                            <li data-day="Monday">Monday</li>
+                            <li data-day="Tuesday">Tuesday</li>
+                            <li data-day="Wednesday">Wednesday</li>
+                            <li data-day="Thursday">Thursday</li>
+                            <li data-day="Friday">Friday</li>
+                            <li data-day="Saturday">Saturday</li>
+                            <li data-day="Sunday">Sunday</li>
+                        </ul>
+                        <div class="hours-display">
+                            <p>Click a day to see the hours</p>
+                        </div>
+                    </div>
+                </div>  
+              
+            </div> 
+
+              
+              <div class="booking">
+                <h2>Workspace Booking</h2>
+                <p>You are able to book, up to a week in advance, a table for 2 hours or less to do work!</p>
+              
+                <form id="bookingForm">
+                  <!--Can add the validation to this (need at least 2) -->
+                  <label for="name">Full Name:</label>
+                  <input type="text" id="name" required><br><br>
+            
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" required><br><br>
+
+                  <label for="people">Number of People (max 4):</label>
+                  <input type="number" id="people" min="1" max="4" required><br><br>
+              
+                  <label for="date">Booking Date:</label>
+                  <input type="date" id="date" required><br><br>
+              
+                  <p>Seating Preference:</p>
+                  <label><input type="radio" name="seating" value="Window"> Window</label>
+                  <label><input type="radio" name="seating" value="Booth"> Booth</label><br><br>
+              
+                  <!-- Submit -->
+                  <button type="submit">Book Now</button>
+                </form>
+              
+                <!-- Results go here / Empty -->
+                <div id="bookingResults"></div>
+              </div>
+
+        </main>
+    </body>
+
+
+</html>
+
+
+
+  
