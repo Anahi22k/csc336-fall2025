@@ -1,0 +1,120 @@
+/* Reset and general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Georgia", serif;
+    background: linear-gradient(180deg, #fffdf8, #fceee5);
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    color: #3a2c2c;
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(to right, #b56576, #e56b6f, #eaac8b);
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    text-align: center;
+  }
+  
+  header h1 {
+    color: #fffdf8;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    font-family: "Palatino", serif;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+  
+  nav a {
+    color: #fffdf8;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: background 0.3s;
+  }
+  
+  nav a:hover {
+    background: rgba(255, 255, 255, 0.25);
+  }
+  
+  /* Sections */
+  section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #fffdf8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  }
+  
+  h2 {
+    margin-bottom: 15px;
+    color: #5a3e36;
+    border-bottom: 2px dashed #e56b6f;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  /* Popular items cards */
+  .card {
+    background: #faf3f3;
+    border: 1px solid #e0cfcf;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease, box-shadow 0.3s;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Chart */
+  #myChart {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  /* Footer */
+  footer {
+    background: #3a2c2c;
+    color: #fffdf8;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+  }
+  
+
+
+/* Add glowing effect when card is clicked */
+.card.active {
+    background: #fff7e6;
+    box-shadow: 0 0 15px #e56b6f;
+    transform: scale(1.02);
+  }
+  

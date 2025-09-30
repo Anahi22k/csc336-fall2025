@@ -1,0 +1,122 @@
+<!--
+Ideas
+Coffe shop / Cat caffee / Flower shop?
+
+Libraries and usage:
+Tone.js - sound for order button 
+Chart.js — current costumers like googles maps to show how busy the place currently is
+
+
+Requirements
+[DONE ] A title for your restaurant.
+[ ] At least one image (e.g., food, restaurant, logo).
+[ DOME] A short paragraph describing your restaurant.
+[ ] Any other content you’d like (hours, location, fun facts, etc.).
+[ ] Add at least 3 CSS rules to style your page.
+    what rules did I use:
+        1.x
+        2.y
+        3.z
+[ ] Use at least one external JavaScript library loaded via CDN.
+[ ] You must use it in a way that changes the page or adds some visible/interactive effect.
+[ ] Include your own JavaScript code that interacts with the library (not just static).
+[ ] Be creative! Your use of the library doesn’t have to be big or complicated. A small, fun effect is enough.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>05-external-libraries</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- External libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.39/Tone.js"></script>
+</head>
+<body>
+  <header>
+    <h1>C&F</h1>
+    <nav>
+      <a href="../../index.html">Home</a>
+      <a href="../../index.html">Menu</a>
+      <a href="../../index.html">Hours</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="goals">
+      <h2>About Us</h2>
+      <p>Coffee & Flowers. The best of both worlds. We offer you an opportunity to enjoy a cup of coffee to wake up but also the ability to purchase flowers to brighten your day. If you would like to see our current cycle of available flowers or pre-order, please go to our <b>flower order tab</b></p>
+      <ul>
+        <li><b>Weekdays:</b> 7:30am - 6pm</li>
+        <li><b>Weekends:</b> 10am - 6pm</li>
+      </ul>
+    </section>
+
+    <section id="setup">
+      <h2>Popular Times:</h2>
+      <canvas id="myChart" width="400" height="200"></canvas>
+    </section>
+
+    <section id="tasks">
+        <h2>Popular Items</h2>
+      
+        <div class="card" id="latteCard">
+          <img src="latte.png" alt="Oat Iced Latte">
+          <h3>Oat Iced Latte</h3>
+          <p>The perfect non-dairy drink to start your morning off with</p>
+        </div>
+      
+        <div class="card">
+          <img src="flowers.png" alt="Fresh Rose Bundle">
+          <h3>Fresh Rose Bundle</h3>
+          <p>A classic way to brighten someones day</p>
+        </div>
+      </section>
+      
+  </main>
+
+  <footer>
+    <p>CSC336 — Web Programming - American University - Fall 2025</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Chart.js bar chart
+    const xValues = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+    const yValues = [600, 550, 618, 600, 480];
+    const barColors = ["red", "green", "blue", "orange", "brown"];
+
+    new Chart("myChart", {
+      type: "bar",
+      data: {
+        labels: xValues,
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues
+        }]
+      },
+      options: {
+        plugins: {
+          legend: { display: false },
+          title: { display: true, text: "Visitors by Day" }
+        },
+        scales: {
+          y: { beginAtZero: true }
+        }
+      }
+    });
+
+    // Tone.js sound trigger on card click
+    const player = new Tone.Player("magic-sparkle-190030.mp3").toDestination();
+
+    document.getElementById("latteCard").addEventListener("click", async () => {
+      await Tone.start(); // required by browsers for first interaction
+      player.start();
+      // stop after 5 seconds
+      setTimeout(() => player.stop(), 5000);
+    });
+  </script>
+  <script src="script.js"></script>
+
+</body>
+</html>
