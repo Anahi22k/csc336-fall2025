@@ -48,7 +48,7 @@ async function getWeather() {
   }
 }
 
-// helper based on the code it returnes for description
+// helper based on the code it returnes for description based on doc
 function getWeatherDescription(code) {
   const codes = {
     0: "clear sky",
