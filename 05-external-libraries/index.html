@@ -62,6 +62,7 @@ Requirements
       
         <div class="card" id="latteCard">
           <img src="latte.png" alt="Oat Iced Latte">
+          <!--idea: but two images, one from above and below that go on top of current one, can be like a cat eating that food-->
           <h3>Oat Iced Latte</h3>
           <p>The perfect non-dairy drink to start your morning off with</p>
         </div>
@@ -85,6 +86,7 @@ Requirements
     const barColors = ["red", "green", "blue", "orange", "brown"];
 
     new Chart("myChart", {
+        <!--make the user select the time from a drop down menu, and use random to dysplay the bar witht he number of people currenlty there-->
       type: "bar",
       data: {
         labels: xValues,
@@ -105,7 +107,7 @@ Requirements
     });
 
     // Tone.js sound trigger on card click
-    const player = new Tone.Player("magic-sparkle-190030.mp3").toDestination();
+    const player = new Tone.Player("magic-sparkle-190030.mp3").toDestination(); //audio wont work
 
     document.getElementById("latteCard").addEventListener("click", async () => {
       await Tone.start(); // required by browsers for first interaction
