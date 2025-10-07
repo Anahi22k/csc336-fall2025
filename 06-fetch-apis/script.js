@@ -32,7 +32,7 @@ async function getWeather() {
     let temp = weather.temperature;
     let weatherCode = weather.weathercode;
 
-    // convert Celsius → Fahrenheit
+    // convert celsius to fahrenheit
     temp = (temp * 9/5) + 32;
 
     let description = getWeatherDescription(weatherCode);
