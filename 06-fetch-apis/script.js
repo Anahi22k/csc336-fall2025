@@ -33,7 +33,7 @@ async function getWeather() {
     let temp = weather.temperature;
     let weatherCode = weather.weathercode;
 
-    // convert Celsius to Fahrenheit
+    // convert celsius to fahrenheit
     temp = (temp * 9/5) + 32;
 
     let description = getWeatherDescription(weatherCode);
@@ -49,7 +49,7 @@ async function getWeather() {
   }
 }
 
-// the weather intrpertation code
+// helper based on the code it returnes for description based on doc
 function getWeatherDescription(code) {
   const codes = {
     0: "clear sky",
