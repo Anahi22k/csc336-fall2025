@@ -1,0 +1,107 @@
+
+{
+    "regions": [{
+        "name": "Sahara_Square",
+        "climate": "hot",
+        "towns": [{ 
+            "name": "Cheetah Castle",
+            "population": 21,
+            "notable_people": [{   
+                "name": "Gazelle",
+                "role": "Judge",
+                "items": [{
+                    "car": { 
+                        "number_of_seats": 6,
+                        "color": "yellow"
+                    },
+                    "handbag": {
+                        "color": "yellow",
+                        "size": "medium",
+                        "price": 100,
+                        "style": "shoulder bag"
+                    }
+                }]
+            }] 
+            },
+            {
+                "name": "Mud Bath",
+                "population": 50,
+                "notable_people": [{   
+                    "name": "elephant",
+                    "role": "king",
+                    "items": [{
+                        "car": {
+                            "number_of_seats": 10,
+                            "color": "gray"
+                        },
+                        "handbag": {
+                            "color": "yellow",
+                            "size": "medium",
+                            "price": 100,
+                            "style": "shoulder bag"
+                        }}]
+                    }]
+            }]
+    },
+    {
+        "name": "Rainforest District",
+        "climate": "wet",
+        "towns": [{ 
+            "name": "Treehouse",
+            "population": 80,
+            "notable_people": [{   
+                "name": "Penelope Otterton",
+                "role": "activist",
+                "items": [{
+                    "car": { 
+                        "number_of_seats": 4,
+                        "color": "green"
+                    },
+                    "glasses": {
+                        "color": "black",
+                        "style": "round"
+                    }
+                }]   
+            },
+            {
+                "name": "Elliot Pandalight",
+                "role": "mayor",
+                "items": [{
+                    "car": { 
+                        "number_of_seats": 2,
+                        "color": "white"
+                    },
+                    "food": "bamboo"  
+                }]
+
+            }]},
+            {
+                "name": "Jacksonville",
+                "population": 15,
+                "notable_people": [{   
+                    "name": "Renato Manchas",
+                    "role": "limo driver",
+                    "items": [{
+                        "car": {  
+                            "number_of_seats": 15,
+                            "color": "black"
+                    },
+                        "clothes color": {
+                            "pants": "gray",
+                            "tank top": "white"
+                    }
+                }]   
+            }]
+            }      
+        ]
+    }
+    ]
+}
+                            
+
+
+
+
+
+
+      

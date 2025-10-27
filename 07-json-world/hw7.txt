@@ -1,0 +1,29 @@
+JSON Structure Requirements
+
+Your top-level object must have a key called "regions" whose value is an array.
+Each region must be an object containing:
+"name" – the name of the region
+"climate" – a string (e.g. "temperate", "arid")
+"towns" – an array of town objects
+    Each town must include:
+    "name" – the town’s name
+    "population" – a number
+    "notable_people" – an array of people
+        Each person must include:
+        "name" – their full name
+        "role" – their occupation or title
+        "items" – an array of objects or strings representing their possessions
+At least one item must be an object with its own properties (for example: an item that has both a "name" and "rarity").
+Your data should be at least 3 levels deep (e.g., region → town → person → item).
+
+region -> obj that contains:
+    name, climate, towns
+        town:
+            array of town objects
+            name
+            population
+            notable people - array
+            each array:
+                name
+                role
+                items

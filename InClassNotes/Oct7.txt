@@ -1,0 +1,9 @@
+|front end / web dev | -> web brouser [example of a client] [renders] -HTML -CSS -Javascript
+
+when a porgram is sandbox - by itself doesnt interact w/ nything else o website
+can save stuff in local storage / chache
+---------------------------------------
+| backend web dev | server: node.js -> headless google chrome
+- javascript (no visuals)
+
+Apache

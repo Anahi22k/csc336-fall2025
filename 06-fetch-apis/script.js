@@ -23,6 +23,7 @@ async function getWeather() {
     let country = geoData.results[0].country;
 
     // now fetch weather data
+    // // https://api.open-meteo.com/v1/forecast?latitude=40.7143&longitude=-74.006&hourly=temperature_2m,weather_code&temperature_unit=fahrenheit
     let weatherRes = await fetch(
       `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true`
     );
@@ -32,7 +33,7 @@ async function getWeather() {
     let temp = weather.temperature;
     let weatherCode = weather.weathercode;
 
-    // convert Celsius → Fahrenheit
+    // convert Celsius to Fahrenheit
     temp = (temp * 9/5) + 32;
 
     let description = getWeatherDescription(weatherCode);
@@ -48,7 +49,7 @@ async function getWeather() {
   }
 }
 
-// helper based on the code it returnes for description
+// the weather intrpertation code
 function getWeatherDescription(code) {
   const codes = {
     0: "clear sky",

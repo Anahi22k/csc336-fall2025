@@ -1,0 +1,34 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <h1> Hello worldd!</h1>
+        <form id> 
+            <label for=""name"> Name:</label>
+            <input name=""name" type="text">
+            <button type="'submit">CLICK</button>
+        </form>
+        <script>
+            let dataFormEl = document.querySelector("#dataForm");
+            dataFormEl.addEventListener("submit", e => {
+                e.preventDefault(); //bc the default when submitting a form is refreshing
+                let data = {}
+                for (let entry of entries){
+                    data[entry[0]] = entry[1] //we want to do this bc this si the format you can send over to a server
+
+                } //building an object thats in json strucute
+                //another way to do it:
+                let data = Object.fromEntries(formData.entrier()); //faster way to create a json format that contains all the responses from the form
+
+
+
+
+
+                let nameInputEl = document.querySelector("#nameInput");
+                console.log(nameInputEl.value)
+            });
+        </script>
+    </body>
+</html>
