@@ -6,13 +6,22 @@ import fs from "fs";
 //Parses the JSON into a JavaScript object
 //prints out some interesting subset of the data
 let data = fs.readFileSync('./world.json', "utf-8"); // read json file
-console.log(data)
+//console.log(data)
 const javaScript_object = JSON.parse(data) //parses into js object
-console.log(javaScript_object.towns)
+
+console.log("Towns in zootopia:");
+javaScript_object.regions.forEach(region => {
+  region.towns.forEach(town => {
+    console.log(`- ${town.name} (${region.name})`);
+  });
+});
+
+//const javaScript_object = JSON.parse(data) //parses into js object
+//console.log(javaScript_object.towns)
 
 
 
-console.log(javaScript_object);
+//console.log(javaScript_object);
 
 
 // This sample program will keep track of how many times this script

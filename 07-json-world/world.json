@@ -1,7 +1,7 @@
 
 {
     "regions": [{
-        "name": "Sahara_Square",
+        "name": "Sahara Square",
         "climate": "hot",
         "towns": [{ 
             "name": "Cheetah Castle",
@@ -9,18 +9,11 @@
             "notable_people": [{   
                 "name": "Gazelle",
                 "role": "Judge",
-                "items": [{
-                    "car": { 
-                        "number_of_seats": 6,
-                        "color": "yellow"
-                    },
-                    "handbag": {
-                        "color": "yellow",
-                        "size": "medium",
-                        "price": 100,
-                        "style": "shoulder bag"
-                    }
-                }]
+                "items": [
+                    { "name": "car", "number_of_seats": 6, "color": "yellow" },
+                    { "name": "handbag", "color": "yellow", "size": "medium", "price": 100, "style": "shoulder bag" }
+                    
+                ]
             }] 
             },
             {
@@ -29,20 +22,81 @@
                 "notable_people": [{   
                     "name": "elephant",
                     "role": "king",
-                    "items": [{
-                        "car": {
-                            "number_of_seats": 10,
-                            "color": "gray"
-                        },
-                        "handbag": {
-                            "color": "yellow",
-                            "size": "medium",
-                            "price": 100,
-                            "style": "shoulder bag"
-                        }}]
+                    "items": [
+                        { "name": "car", "number_of_seats": 10, "color": "gray" },
+                        { "name": "handbag", "color": "yellow", "size": "medium", "price": 100, "style": "shoulder bag" }
+                    ]
                     }]
             }]
     },
+    {
+        "name": "Tundratown",
+        "climate": "cold",
+        "towns": [{ 
+            "name": "Kozlov's Palace",
+            "population": 11,
+            "notable_people": [{   
+                "name": "Kevin Kozlov",
+                "role": "fisherman",
+                "items": [
+                    { "name": "boat", "color": "white" },
+                    { "name": "chain", "color": "gold"},
+                    { "name": "coat", "color": "white"}
+                    
+                ]
+            },
+            {   
+                "name": "Raymond Kozlov",
+                "role": "security guard",
+                "items": [
+                    { "name": "boat", "color": "balck" },
+                    { "name": "track suit", "color": "black"}
+                    
+                ]
+            }
+
+
+        ] 
+            },
+            { 
+            "name": "Tundratown Ice Center",
+            "population": 21,
+            "notable_people": [{   
+                "name": "Vito Big",
+                "role": "Mafia boss",
+                "items": [
+                    { "name": "car", "number_of_seats": 6, "color": "yellow" }
+                    
+                ]
+            }] 
+            },
+            {
+                "name": "Varg's Inferno",
+                "population": 50,
+                "notable_people": [{   
+                    "name": "Fru Fru Shrewney",
+                    "role": "Mother",
+                    "items": [
+                        { "name": "dress", "color": "white" },
+                        { "name": "hat", "color": "brown", "size": "large", "price": 100}
+                    ]
+                    }]
+            },
+            {
+                "name": "Glacier Glade",
+                "population": 14,
+                "notable_people": [
+                  {
+                    "name": "Nora Frostpaw",
+                    "role": "Snow Sculptor",
+                    "items": [
+                      { "name": "sculpting kit", "color": "silver", "pieces": 5 },
+                      { "name": "parka", "color": "ice-blue", "size": "medium", "price": 120 }
+                    ]
+                  }]
+              }
+            ]
+          },
     {
         "name": "Rainforest District",
         "climate": "wet",
@@ -52,27 +106,18 @@
             "notable_people": [{   
                 "name": "Penelope Otterton",
                 "role": "activist",
-                "items": [{
-                    "car": { 
-                        "number_of_seats": 4,
-                        "color": "green"
-                    },
-                    "glasses": {
-                        "color": "black",
-                        "style": "round"
-                    }
-                }]   
+                "items": [
+                    { "name": "car", "number_of_seats": 4, "color": "green" },
+                    { "name": "glasses", "color": "black", "style": "round" }
+                ]   
             },
             {
                 "name": "Elliot Pandalight",
                 "role": "mayor",
-                "items": [{
-                    "car": { 
-                        "number_of_seats": 2,
-                        "color": "white"
-                    },
-                    "food": "bamboo"  
-                }]
+                "items": [
+                    { "name": "car", "number_of_seats": 2, "color": "white" },
+                    { "name": "food", "type": "bamboo" }
+                ]
 
             }]},
             {
@@ -81,16 +126,11 @@
                 "notable_people": [{   
                     "name": "Renato Manchas",
                     "role": "limo driver",
-                    "items": [{
-                        "car": {  
-                            "number_of_seats": 15,
-                            "color": "black"
-                    },
-                        "clothes color": {
-                            "pants": "gray",
-                            "tank top": "white"
-                    }
-                }]   
+                    "items": [
+                        { "name": "car", "number_of_seats": 15, "color": "black" },
+                        { "name": "clothes", "pants": "gray", "tank_top": "white" }
+                        
+                    ]   
             }]
             }      
         ]

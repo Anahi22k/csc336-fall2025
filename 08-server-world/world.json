@@ -1,0 +1,229 @@
+{
+  "regions": [
+    {
+      "name": "Sahara Square",
+      "climate": "hot",
+      "towns": [
+        {
+          "name": "Cheetah Castle",
+          "population": 21,
+          "notable_people": [
+            {
+              "name": "Gazelle",
+              "role": "Judge",
+              "items": [
+                {
+                  "name": "car",
+                  "number_of_seats": 6,
+                  "color": "yellow"
+                },
+                {
+                  "name": "handbag",
+                  "color": "yellow",
+                  "size": "medium",
+                  "price": 100,
+                  "style": "shoulder bag"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Mud Bath",
+          "population": 50,
+          "notable_people": [
+            {
+              "name": "elephant",
+              "role": "king",
+              "items": [
+                {
+                  "name": "car",
+                  "number_of_seats": 10,
+                  "color": "gray"
+                },
+                {
+                  "name": "handbag",
+                  "color": "yellow",
+                  "size": "medium",
+                  "price": 100,
+                  "style": "shoulder bag"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tundratown",
+      "climate": "cold",
+      "towns": [
+        {
+          "name": "Kozlov's Palace",
+          "population": 11,
+          "notable_people": [
+            {
+              "name": "Kevin Kozlov",
+              "role": "fisherman",
+              "items": [
+                {
+                  "name": "boat",
+                  "color": "white"
+                },
+                {
+                  "name": "chain",
+                  "color": "gold"
+                },
+                {
+                  "name": "coat",
+                  "color": "white"
+                }
+              ]
+            },
+            {
+              "name": "Raymond Kozlov",
+              "role": "security guard",
+              "items": [
+                {
+                  "name": "boat",
+                  "color": "balck"
+                },
+                {
+                  "name": "track suit",
+                  "color": "black"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Tundratown Ice Center",
+          "population": 21,
+          "notable_people": [
+            {
+              "name": "Vito Big",
+              "role": "Mafia boss",
+              "items": [
+                {
+                  "name": "car",
+                  "number_of_seats": 6,
+                  "color": "yellow"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Varg's Inferno",
+          "population": 50,
+          "notable_people": [
+            {
+              "name": "Fru Fru Shrewney",
+              "role": "Mother",
+              "items": [
+                {
+                  "name": "dress",
+                  "color": "white"
+                },
+                {
+                  "name": "hat",
+                  "color": "brown",
+                  "size": "large",
+                  "price": 100
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Glacier Glade",
+          "population": 14,
+          "notable_people": [
+            {
+              "name": "Nora Frostpaw",
+              "role": "Snow Sculptor",
+              "items": [
+                {
+                  "name": "sculpting kit",
+                  "color": "silver",
+                  "pieces": 5
+                },
+                {
+                  "name": "parka",
+                  "color": "ice-blue",
+                  "size": "medium",
+                  "price": 120
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rainforest District",
+      "climate": "wet",
+      "towns": [
+        {
+          "name": "Treehouse",
+          "population": 80,
+          "notable_people": [
+            {
+              "name": "Penelope Otterton",
+              "role": "activist",
+              "items": [
+                {
+                  "name": "car",
+                  "number_of_seats": 4,
+                  "color": "green"
+                },
+                {
+                  "name": "glasses",
+                  "color": "black",
+                  "style": "round"
+                }
+              ]
+            },
+            {
+              "name": "Elliot Pandalight",
+              "role": "mayor",
+              "items": [
+                {
+                  "name": "car",
+                  "number_of_seats": 2,
+                  "color": "white"
+                },
+                {
+                  "name": "food",
+                  "type": "bamboo"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Jacksonville",
+          "population": 15,
+          "notable_people": [
+            {
+              "name": "Renato Manchas",
+              "role": "limo driver",
+              "items": [
+                {
+                  "name": "car",
+                  "number_of_seats": 15,
+                  "color": "black"
+                },
+                {
+                  "name": "clothes",
+                  "pants": "gray",
+                  "tank_top": "white"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

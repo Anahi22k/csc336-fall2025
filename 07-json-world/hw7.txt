@@ -27,3 +27,6 @@ region -> obj that contains:
                 name
                 role
                 items
+
+zootopia world reference: https://zootopia-world.fandom.com/wiki/Renato_Manchas
+issues ref: https://www.codecademy.com/forum_questions/549879b2d3292ff046007d9b
