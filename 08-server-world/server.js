@@ -30,8 +30,14 @@ app.post("/update", async (req, res) => {
     // Get new person data from the client
 
     const newPerson = req.body;
+    //when submitting an item it would seperate it by commas, solution:
     if (typeof newPerson.items === "string") {
-        newPerson.items = [newPerson.items];
+        // Split if commas are present, otherwise wrap in array
+        if (newPerson.items.includes(",")) {
+          newPerson.items = newPerson.items.split(",").map(i => i.trim());
+        } else {
+          newPerson.items = [newPerson.items.trim()];
+        }
       }
  // newPerson should look like:
   // {
