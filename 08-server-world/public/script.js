@@ -19,7 +19,7 @@ async function loadWorld() {
         for (let person of town.notable_people) {
             information += `<li><strong>${person.name}</strong> (${person.role})<ul>`;
   
-          // loop through their items (you said every person has items)
+          // loop through their items (assuming every person has items)
           for (let item of person.items) {
             let details = "";
           
@@ -47,9 +47,8 @@ loadWorld();
 let nameForm = document.querySelector("#nameForm");
 
 // When the user clicks the button, the event listener will read the text in the
-// form, construct an object and send it over to the servers /update route using
-// a POST HTTP request 
-//server side, it finds the correct region and town and adds the new person there
+// form, construct an object and send it over to the servers /update route 
+//server side,finds the correct region and town and adds the new person there
 // It then writes it back to world.json and returns
 
 nameForm.addEventListener("submit", async (e) => {
