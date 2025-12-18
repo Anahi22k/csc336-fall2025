@@ -1,7 +1,7 @@
 import { GoogleGenAI } from "@google/genai";
 
 const api = new GoogleGenAI({
-    apikey: "AIzaSyAcawdByyUTSlM4wZptDwC_8JSkp8Y4Gxg" // anything that has these passwords has to be on server not frontend 
+    apikey: "" // anything that has these passwords has to be on server not frontend 
 
 });
 
